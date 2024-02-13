@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congratulation Rero</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5e1f2;
+      /* light pink */
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #8b5e97;
+      /* purple */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #6e4072;
+      /* darker purple on hover */
+    }
+
+    #page2 img {
+      max-width: 80%;
+    }
+
+    #page2 p {
+      font-size: 24px;
+      font-family: "Times New Roman", Times, serif;
+      color: #8b0000;
+      /* dark pink */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="page1" class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxIeggceZfvR6Si9-9Za_59sICLcOwHsNww&usqp=CAU"
+      alt="Congratulation Rero">
+    <p>Congratulation Rero</p>
+    <a href="#" class="button" onclick="showPage('page2')">Continue</a>
+  </div>
+
+  <div id="page2" class="container" style="display:none;">
+    <img src="https://assets.the-afc.com/2023_AFC_Asian_Cup/Matches/Final/Match/Match-Report/Trophy-lift.JPG"
+      alt="Trophy Lift">
+    <p style="font-family: 'Times New Roman', Times, serif; color: #8b0000;">xoxo</p>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      document.getElementById('page1').style.display = 'none';
+      document.getElementById('page2').style.display = 'none';
+      document.getElementById(pageId).style.display = 'block';
+    }
+  </script>
+
+</body>
+
+</html>
